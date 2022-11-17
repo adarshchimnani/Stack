@@ -28,6 +28,16 @@ struct stack
 		list=new int [maxStackSize];
 	}
 
+	bool emptyStack ()
+	{
+		return (stackTop==0);
+	}
+
+	bool fullStack ()
+	{
+		return (stackTop==maxStackSize);
+	}
+
 	
 };
 
