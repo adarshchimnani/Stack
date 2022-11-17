@@ -38,6 +38,28 @@ struct stack
 		return (stackTop==maxStackSize);
 	}
 
+	void push()
+	{
+		ask='y';	
+		while (ask=='y' || ask=='Y')
+		{
+			cout<<"Please enter the value in digits."<<endl;
+			cin>>item;
+
+			if (!fullStack())
+			{
+				list[stackTop]=item;
+				stackTop++;
+			}
+				
+			else
+				cout<<"Stack is full."<<endl;
+		
+			cout<<"If you want to store more digits, enter 'y'."<<endl;
+			cin>>ask;
+		}
+	}
+
 	
 };
 
