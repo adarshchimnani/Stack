@@ -73,7 +73,16 @@ struct stack
 			list[i]=otherStack.list[i];
 	}
 
+	void display ()
+	{
+		if (!emptyStack())
+			for (int j=0; j<stackTop; j++)
+				cout<<list[j]<<" ";
 
+		cout<<endl;
+	}
+
+	
 
 	
 };
