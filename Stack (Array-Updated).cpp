@@ -87,7 +87,10 @@ struct stack
 		cout<<endl<<"The top element in the stack is: "<<list[stackTop-1]<<endl;
 	}
 
-	
+	void size()
+	{
+		cout<<endl<<"The no. of element is the stack is: "<<stackTop<<endl;
+	}
 
 	
 };
