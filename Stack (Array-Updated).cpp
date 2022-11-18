@@ -61,7 +61,19 @@ struct stack
 			cout<<"Empty Stack."<<endl;
 	}
 
-	
+	void copy (stack otherStack)
+	{
+		delete [] list;
+		maxStackSize=otherStack.maxStackSize;
+		stackTop=otherStack.stackTop;
+
+		list=new int [maxStackSize];
+
+		for (int i=0; i<maxStackSize; i++)
+			list[i]=otherStack.list[i];
+	}
+
+
 
 	
 };
