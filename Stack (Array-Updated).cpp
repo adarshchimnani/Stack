@@ -97,7 +97,26 @@ struct stack
 
 void main ()
 {
+	stack obj(3);
 
+	obj.push(1);
+	obj.push(2);
+
+	obj.pop();
+	obj.pop();
+
+	obj.push(3);
+
+	obj.peek();
+	obj.size();
+
+	obj.pop();
+
+	if(obj.emptyStack())
+		cout<<endl<<"Stack is empty"<<endl;
+
+	else
+		cout<<endl<<"Stack is not empty"<<endl;
 
 
 
