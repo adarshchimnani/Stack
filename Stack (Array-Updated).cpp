@@ -35,6 +35,21 @@ struct stack
 		return (stackTop==maxStackSize);
 	}
 
+	void push(int x)
+	{
+		
+			if (!fullStack())
+			{
+				list[stackTop]=x;
+				stackTop++;
+				cout<<"Stack has been pushed: "<<x<<endl;
+			}
+				
+			else
+				cout<<"Stack is full."<<endl;
+		
+	}
+
 	
 	
 };
