@@ -82,6 +82,11 @@ struct stack
 		cout<<endl;
 	}
 
+	void peek()
+	{
+		cout<<endl<<"The top element in the stack is: "<<list[stackTop-1]<<endl;
+	}
+
 	
 
 	
