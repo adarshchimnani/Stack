@@ -50,7 +50,19 @@ struct stack
 		
 	}
 
+	void pop ()
+	{
+		if (!emptyStack())
+		{
+			cout<<"Stack has been popped: "<<list[stackTop-1]<<endl;
+			stackTop--;
+		}
+		else
+			cout<<"Empty Stack."<<endl;
+	}
+
 	
+
 	
 };
 
