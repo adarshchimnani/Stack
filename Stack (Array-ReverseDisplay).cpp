@@ -85,7 +85,35 @@ struct stack
 			list[i]=otherStack.list[i];
 	}
 
+	void display ()
+	{
+		if (!emptyStack())
+			for (int j=0; j<stackTop; j++)
+				cout<<list[j]<<" ";
+
+		cout<<endl;
+	}
+
+	void reverseDisplay ()
+	{
 	
+		for(int i=0; i<stackTop; i++)
+		{
+		//	int a=list[i].length();
+		//	char *charArray= new char [a+1];
+			
+		//	strcpy(charArray, list[i].c_str());
+		//	for(int l=a; l>=0; l--)
+		//	{
+				reverse(list[i].begin(), list[i].end());
+				cout<<list[i]<<endl;;
+		//	}	
+			
+		//	cout<<endl;
+		}
+		cout<<endl;
+	}
+
 	
 };
 
