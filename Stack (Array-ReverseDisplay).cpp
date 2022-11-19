@@ -39,7 +39,30 @@ struct stack
 		return (stackTop==maxStackSize);
 	}
 
-	
+	void push()
+	{
+		ask='y';	
+		while (ask=='y' || ask=='Y')
+		{
+			cout<<"Please enter any name."<<endl;
+			cin.ignore();
+			getline(cin,item);
+		
+
+			if (!fullStack())
+			{
+				list[stackTop]=item;
+				stackTop++;
+			}
+				
+
+			else
+				cout<<"Stack is full."<<endl;
+		
+			cout<<"If you want to store more names, enter 'y'."<<endl;
+			cin>>ask;
+		}
+	}
 
 	
 
