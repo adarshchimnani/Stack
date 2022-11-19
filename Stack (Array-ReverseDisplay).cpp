@@ -114,14 +114,48 @@ struct stack
 		cout<<endl;
 	}
 
-	
+	void menu ()
+	{
+		ask='y';
+		
+		int entry;
+		{
+			while (ask=='y' || ask=='Y')
+			{
+				cout<<"Welcome."<<endl;
+				cout<<"Please enter 1 to Push Stack."<<endl;
+				cout<<"Please enter 2 to Pop Stack."<<endl;
+				cout<<"Please enter 3 to Display Stack."<<endl;
+				cout<<"Please enter 4 to Reverse Display."<<endl;
+				cin>>entry;
+
+				if (entry==1)
+					push();
+
+				else if (entry==2)
+					pop();
+
+				else if (entry==3)
+					display();
+
+				else if (entry==4)
+					reverseDisplay();
+			
+				else
+					cout<<"Enter the correct entry."<<endl;
+		
+				cout<<"Do you want to go to the menu?."<<endl;
+				cin>>ask;
+			}
+		}
+	}
 };
 
 void main ()
 {
 	stack obj;
 
-
+	obj.menu();
 
 
 getch();
