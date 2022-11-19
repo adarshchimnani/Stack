@@ -29,7 +29,15 @@ struct stack
 		list=new string [maxStackSize];
 	}
 
+	bool emptyStack ()
+	{
+		return (stackTop==0);
+	}
 
+	bool fullStack ()
+	{
+		return (stackTop==maxStackSize);
+	}
 
 	
 
