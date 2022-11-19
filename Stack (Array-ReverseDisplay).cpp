@@ -64,7 +64,14 @@ struct stack
 		}
 	}
 
-	
+	void pop ()
+	{
+		if (!emptyStack())
+			stackTop--;
+
+		else
+			cout<<"Empty Stack."<<endl;
+	}
 
 	
 	
