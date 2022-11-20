@@ -20,6 +20,15 @@ struct stack
 		stackTop=NULL;
 	}
 
+	bool empty ()
+	{
+		return (stackTop==NULL);
+	}
+
+	bool full ()
+	{
+		return false;
+	}
 
 
 
