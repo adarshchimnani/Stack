@@ -112,7 +112,35 @@ struct stack
 		cout<<endl;
 	}
 
+	void menu ()
+	{
+		ask='y';
 	
+		while (ask=='y' || ask=='Y')
+		{
+			cout<<"Welcome."<<endl;
+			cout<<"Please enter 1 to Push Stack."<<endl;
+			cout<<"Please enter 2 to Pop Stack."<<endl;
+			cout<<"Please enter 3 to Display Stack."<<endl;
+
+			cin>>entry;
+
+			if (entry==1)
+				push();
+
+			else if (entry==2)
+				pop();
+
+			else if (entry==3)
+				display();
+
+			else
+				cout<<"Please entry the correct entry."<<endl;
+
+			cout<<"Do you want to enter to the menu, enter 'y'."<<endl;
+			cin>>ask;
+		}
+	}
 };	
 
 void main ()
