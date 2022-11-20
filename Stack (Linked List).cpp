@@ -58,7 +58,18 @@ struct stack
 		}
 	}
 	
-	
+	void pop ()
+	{
+		if (stackTop!=NULL)
+		{
+			temp=stackTop;
+			stackTop=stackTop->link;
+			delete temp;
+		}
+
+		else
+			cout<<"Stack is empty."<<endl;
+	}
 
 	
 
