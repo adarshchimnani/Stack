@@ -30,7 +30,15 @@ struct stack
 		return false;
 	}
 
-
+	void initialize ()
+	{
+		while (stackTop!=NULL)
+		{
+			temp=stackTop;
+			stackTop=stackTop->link;
+			delete temp;
+		}
+	}
 
 
 	
