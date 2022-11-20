@@ -40,6 +40,25 @@ struct stack
 		}
 	}
 
+	void push ()
+	{
+		ask='y';
+		while (ask=='y' || ask=='Y')
+		{
+			cout<<"Please enter the value in digits."<<endl;
+			cin>>item;
+		
+			newNode = new node;
+			newNode->info=item;
+			newNode->link=stackTop;
+			stackTop=newNode;
+
+			cout<<endl<<"Do you want to enter more values, then press 'y'."<<endl;
+			cin>>ask;
+		}
+	}
+	
+	
 
 	
 
