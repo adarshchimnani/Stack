@@ -147,7 +147,7 @@ void main ()
 {
 	stack obj;
 	
-	
+	obj.menu();
 
 getch();
 }
