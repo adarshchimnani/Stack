@@ -51,6 +51,26 @@ struct stack
 		cout<<endl<<"Stack has been pushed with: "<<x<<endl;
 	}
 	
+	void pop ()
+	{
+		if (stackTop!=NULL)
+		{
+			cout<<endl<<"Stack has been popped of: "<<stackTop->info<<endl;
+			temp=stackTop;
+			stackTop=stackTop->link;
+			delete temp;
+			count--;
+		}
+
+		else
+		{
+			cout<<"Stack is empty."<<endl;
+		}
+	
+	}
+
+	
+
 	
 
 
