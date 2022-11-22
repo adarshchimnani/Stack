@@ -41,7 +41,15 @@ struct stack
 		}
 	}
 
-	
+	void push (int x)
+	{
+		newNode = new node;
+		newNode->info=x;
+		newNode->link=stackTop;
+		stackTop=newNode;
+		count++;
+		cout<<endl<<"Stack has been pushed with: "<<x<<endl;
+	}
 	
 	
 
