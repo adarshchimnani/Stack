@@ -127,6 +127,21 @@ void main ()
 {
 	stack obj;
 	
-	
+	obj.push(1);
+	obj.push(2);
+	obj.push(3);
+
+	obj.peek();
+
+	obj.pop();
+	obj.pop();
+	obj.pop();
+
+	if(obj.emptyStack())
+		cout<<"Stack is empty."<<endl;
+
+	else
+		cout<<"Stack is not empty."<<endl;
+
 _getch();
 }
