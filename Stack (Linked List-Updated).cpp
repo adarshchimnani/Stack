@@ -107,7 +107,17 @@ struct stack
 		}
 	}
 
+	void display ()
+	{
+		temp=stackTop;
 
+		while (temp!=NULL)
+		{
+			cout<<temp->info<<" ";
+			temp=temp->link;
+		}
+		cout<<endl;
+	}
 
 	
 };	
