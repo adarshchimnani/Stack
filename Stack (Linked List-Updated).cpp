@@ -31,7 +31,15 @@ struct stack
 		return false;
 	}
 
-	
+	void initialize () //Omitting list
+	{
+		while (stackTop!=NULL)
+		{
+			temp=stackTop;
+			stackTop=stackTop->link;
+			delete temp;
+		}
+	}
 
 	
 	
