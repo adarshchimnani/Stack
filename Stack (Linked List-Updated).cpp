@@ -69,7 +69,14 @@ struct stack
 	
 	}
 
-	
+	void peek ()
+	{
+		if(!emptyStack())
+			cout<<endl<<"The Top element of the stack is: "<<stackTop->info<<endl;
+
+		else
+			cout<<endl<<"Stack is Empty."<<endl;
+	}
 
 	
 
