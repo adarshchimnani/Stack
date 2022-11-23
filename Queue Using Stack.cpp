@@ -83,7 +83,35 @@ struct stack
 			return 0;
 	}
 
-	
+	void copy (stack otherStack)
+	{
+		if (stackTop!=NULL)
+			initialize();
+
+		if (otherStack.stackTop==NULL)
+			stackTop=NULL;
+
+		else
+		{
+			current=otherStack.stackTop;
+			stackTop=new node;
+			stackTop->info=current->info;
+			stackTop->link=NULL;
+			last=stackTop;
+			current=current->link;
+
+			while (current!=NULL)
+			{
+				newNode= new node;
+				newNode->info = current->info;
+				newNode->link=NULL;
+				last->link=newNode;
+				last=newNode;
+				current=current->link;
+			}
+		}
+	}
+
 	
 
 	
