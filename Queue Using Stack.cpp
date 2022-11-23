@@ -160,7 +160,20 @@ struct queue
 
 void main ()
 {
-	
+	queue q;
+
+	int keys [] = {1, 2, 3, 4, 5};
+
+	for (int key : keys)
+	{
+		q.enqueue(key);
+		push_count++;
+	}
+
+	q.dequeue();
+	q.dequeue();
+
+	q.display();
 
 
 
