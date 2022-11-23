@@ -151,7 +151,10 @@ struct queue
 		cout<<endl<<"The queue has been popped of: "<<p<<endl;
 	}
 
-	
+	void display()
+	{
+		s2.display();
+	}
 };
 
 
