@@ -74,7 +74,14 @@ struct stack
 	
 	}
 
-	
+	int peek ()
+	{
+		if(!emptyStack())
+			return stackTop->info;
+
+		else
+			return 0;
+	}
 
 	
 	
