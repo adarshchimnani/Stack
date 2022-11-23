@@ -42,7 +42,16 @@ struct stack
 		}
 	}
 
-	
+	int push (int x)
+	{
+		newNode = new node;
+		newNode->info=x;
+		newNode->link=stackTop;
+		stackTop=newNode;
+		count++;
+		return x;
+	//	cout<<endl<<"Queue has been pushed with: "<<x<<endl;
+	}
 	
 	
 
