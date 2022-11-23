@@ -22,7 +22,15 @@ struct stack
 		count=0;
 	}
 
-	
+	bool emptyStack ()
+	{
+		return (stackTop==NULL);
+	}
+
+	bool fullStack ()
+	{
+		return false;
+	}
 
 	
 
