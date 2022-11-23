@@ -129,7 +129,16 @@ struct stack
 };	
 
 
+struct queue
+{
+	stack s1, s2;
 
+	
+
+	
+
+	
+};
 
 
 void main ()
