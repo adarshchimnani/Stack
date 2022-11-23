@@ -133,9 +133,23 @@ struct queue
 {
 	stack s1, s2;
 
-	
+	void enqueue(int x)
+	{
+		s1.push(x);
+		cout<<endl<<"The queue has been pushed with: "<<x<<endl;
+	}
 
-	
+	void dequeue()
+	{
+		if(s2.stackTop==NULL)
+		{
+			for ( int i=1; i<=push_count; i++)
+				s2.push(s1.pop());
+		}
+
+		int p = s2.pop();
+		cout<<endl<<"The queue has been popped of: "<<p<<endl;
+	}
 
 	
 };
