@@ -53,7 +53,26 @@ struct stack
 	//	cout<<endl<<"Queue has been pushed with: "<<x<<endl;
 	}
 	
+	int pop ()
+	{
+		if (stackTop!=NULL)
+		{
+			int d=stackTop->info;
+		//	cout<<endl<<"Queue has been popped of: "<<stackTop->info<<endl;
+			temp=stackTop;
+			stackTop=stackTop->link;
+			delete temp;
+			count--;
+			return d;
+		}
+
+		else
+		{
+			cout<<"Queue is empty."<<endl;
+			return 0;
+		}
 	
+	}
 
 	
 
