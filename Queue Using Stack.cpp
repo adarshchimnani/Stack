@@ -112,7 +112,18 @@ struct stack
 		}
 	}
 
-	
+	void display ()
+	{
+		cout<<endl<<"Remaining items in the queue are: ";
+		
+		temp=stackTop;
+		while (temp!=NULL)
+		{
+			cout<<temp->info<<" ";
+			temp=temp->link;
+		}
+		cout<<endl;
+	}
 
 	
 };	
